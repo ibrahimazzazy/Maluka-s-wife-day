@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Maluka's wifey Day ❤️</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, pink, lavender);
+      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+    }
+
+    h1 {
+      color: #ff0066;
+      margin-top: 30px;
+      animation: fadeIn 3s ease-in;
+    }
+
+    .message {
+      color: #ff3399;
+      font-size: 20px;
+      margin: 10px 0 30px;
+      animation: fadeIn 4s ease-in;
+    }
+
+    .bouquet {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-size: 50px;
+      animation: grow 2s ease-in-out forwards;
+      opacity: 0;
+    }
+
+    .flower {
+      transform: scale(0);
+      animation: bloom 2s ease-in-out forwards;
+    }
+
+    .photo {
+      margin-top: 20px;
+      max-width: 300px;
+      border-radius: 15px;
+      animation: fadeIn 5s ease-in;
+    }
+
+    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+    @keyframes bloom { to {transform: scale(1);} }
+    @keyframes grow { to {opacity: 1;} }
+  </style>
+</head>
+<body>
+  <h1>🌸 Happy Maluka's wifey day hayati🌸</h1>
+  <p class="message">Happy national wife day to my most valuable life maker , your heartcalming words and touches have recolored my world again , You are everything i have ever dreamt of having inside 1 soul that translates into my home, soulmate, and love of my life. There will never be 1 day where it will not revolve around you and around babying you through every up and down. I love every single thing and part of you even if i dont state it like i feel it , i adore your breathtaking eyes , your soft lips ,your pullable hair and kissable cheeks aswell as your dopamine factory smile. Your hand is the charger to my soul and when i hold it i feel like i own the whole earth, and lets not get started with your holdable waist that was made perfectly for my hand which comes with a kissable tummy that ill always take care of , and the biggest trouble maker you got , your perfect legs whom ill take care of every day and glaze like there are no other, and lastly your mind shutting chest that will always cure me of whatever im going through, I will always adore you and worship the floor you walk on and treat you like no one else will and thrive everyday to make you the happiest wife ever , you're my home and my soulmate and my wife and my bestfriend and my eyes will always be on you and i know you wish we could hug right now even though you're glad youre reading this while i cant see your blushy face but its okay ill be waiting for you to come back so i cant love you and treat you as best as i could everyday like there's no tomorrow because i love you and i love you the most forever.</p>
+
+  <div class="bouquet">
+    <div class="flower">🌹</div>
+    <div class="flower">🌸</div>
+    <div class="flower">🌼</div>
+    <div class="flower">💐</div>
+  </div>
+
+  <img src="IMG_3671.heic" alt="Us Together" class="photo">
+
+  <script>
+    // Falling hearts effect
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.innerHTML = '💖';
+      heart.style.position = 'fixed';
+      heart.style.left = Math.random() * window.innerWidth + 'px';
+      heart.style.top = '-20px';
+      heart.style.fontSize = Math.random() * 30 + 20 + 'px';
+      heart.style.opacity = Math.random();
+      heart.style.transition = 'top 5s linear, opacity 5s';
+      document.body.appendChild(heart);
+
+      setTimeout(() => { heart.style.top = window.innerHeight + 'px'; heart.style.opacity = 0; }, 100);
+      setTimeout(() => { heart.remove(); }, 5000);
+    }
+    setInterval(createHeart, 300);
+  </script>
+</body>
+</html>
